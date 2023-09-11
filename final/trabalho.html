@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='trabajo.css'>
+    <script src='formulario.js'></script>
+   
+</head>
+<body>
+    <h1>Formulário com Retenção e JSON</h1>
+    <div class="container1">
+        <div class="grid1">
+    <form action="valida.html">
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade"><br><br>
+
+        <label for="turma">Turma:</label><br>
+        <input type="text" id="turma" name="turma"><br><br>
+    </div>
+    <div class="grid2">
+        <img src="gremio_colorado.jpg"><br>
+        <label for="esporte">Esporte favorito:</label><br>
+        <input type="text" id="esporte" name="esporte"><br><br> 
+
+        <label for="novidades">Receber novidades?</label><br>
+        <input type="radio" id="sim" name="novidades" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="novidades" value="nao">
+        <label for="nao">Não</label><br><br>
+
+        <button type=button onclick="enviar()">Gerar JSON </button>
+        <form action="valida.html">
+        <button type="submit" value="comfirmar">Confirmar
+        </button>
+
+    </form>
+    </form>
+    
+    <pre id="informacoesRetidas"></pre>
+    </div>
+</div>
+  
+
+</body>
+</html>
